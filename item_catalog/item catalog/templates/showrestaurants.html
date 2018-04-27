@@ -1,0 +1,21 @@
+
+
+
+<div class="container">
+	<div class = 'pane'>
+		<div class = 'header'>
+		
+	</div>
+<br><br>
+<div class = 'flash'>
+          
+        <ul>
+        {% for r in restaurant %}
+            <li> <strong> {{ r.name }} </strong> </li>
+        {% endfor %}
+        </ul>
+        
+</div>
+</div>
+<a href="{{ url_for('newRestaurants')}}">Add new restaurants</a>
+</div>
